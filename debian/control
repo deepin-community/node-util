@@ -6,11 +6,12 @@ Testsuite: autopkgtest-pkg-nodejs
 Priority: optional
 Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
- , node-deep-equal <!nocheck>
+ , node-deep-equal (>= 2.0~) <!nocheck>
+ , node-es-abstract (>= 1.20~) <!nocheck>
  , node-inherits <!nocheck>
  , node-safe-buffer <!nocheck>
  , uglifyjs
-Standards-Version: 4.6.0
+Standards-Version: 4.6.1
 Vcs-Browser: https://salsa.debian.org/js-team/node-util
 Vcs-Git: https://salsa.debian.org/js-team/node-util.git
 Homepage: https://github.com/defunctzombie/node-util
@@ -28,10 +29,10 @@ Description: NodeJS util module
 Package: libjs-util
 Architecture: all
 Depends: ${misc:Depends}
- , node-deep-equal
+ , node-deep-equal (>= 2.0~)
  , node-inherits
- , node-safe-buffer
 Recommends: javascript-common
+Multi-Arch: foreign
 Description: JavaScript util module
  libjs-util provides various utilities for regular expressions, deprecating
  functions, inspecting variables and other useful things.

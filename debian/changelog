@@ -1,3 +1,18 @@
+node-util (0.12.5+~1.0.10-1) unstable; urgency=medium
+
+  [ Pirate Praveen ]
+  * Update minimum versions of dependencies
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints. + libjs-util: Add Multi-Arch: foreign.
+
+  [ Yadd ]
+  * Update standards version to 4.6.1, no changes needed.
+  * New upstream version 0.12.5+~1.0.10
+  * Drop dependency to node-safe-buffer
+
+ -- Yadd <yadd@debian.org>  Tue, 18 Oct 2022 17:59:22 +0200
+
 node-util (0.12.4+~1.0.10-1) unstable; urgency=medium
 
   * Fix GitHub tags regex
